@@ -34,10 +34,11 @@ cnxn = pyodbc.connect(driver='{ODBC Driver 18 for SQL Server}',
 # cursor.execute("drop table people")
 # cursor.commit()
 
-with open(os.getcwd()+'\\products.sql', 'r') as sql:
+with open(os.getcwd()+'\\products.sql', 'r', encoding="utf-8") as sql:
     script = sql.read()
     for sql_statement in script.split(';'):
         with cnxn.cursor() as cur:
+            print(sql_statement)
             cur.execute(sql_statement)
 
 cnxn.close()

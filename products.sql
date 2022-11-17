@@ -1,4 +1,4 @@
---Data scraped from : 
+--Data scraped from :
 --http://www.asseenontvus.com/shop/
 --https://www.asseenontvvideo.com/all-products-a-z.html
 

@@ -2,7 +2,7 @@ import os
 import sqlite3
 from sqlite3 import Error
 
-table_name = 'teams'
+table_name = 'matchPlayers'
 use = 'use cs3380;\n\n'
 drop_if_exists = 'drop table if exists ' + table_name + ';\n\n'
 create_team_table_sql = 'CREATE TABLE ' + table_name + ' (team_id INTEGER PRIMARY KEY,'\
